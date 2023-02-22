@@ -1,96 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
-* {
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap'); /*import das fontes */
+* { /*é um seletor universal. Esse seletor representa todos os elementos serão afetados pelas definições de estilo ali colocadas. 
+    Pode ser usado para aplicar uma determinada estilização em todos os elementos da página:*/
     padding: 0;
     margin: 0;
-    font-family: 'Sarala', sans-serif;
+    font-family: 'Sarala', sans-serif; 
 }
 
-body {
+body { /*tag body, vai modificar tudo que está dentro do body, ou seja, a página inteira*/
     background: rgb(177,170,255);
-    background: linear-gradient(180deg, rgba(177,170,255,1) 31%, rgba(144,137,255,1) 100%);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(180deg, rgba(177,170,255,1) 31%, rgba(144,137,255,1) 100%); /*background da página. No meu caso usei um gradient*/
+    height: 100vh; /*tamanho da página*/
+    display: flex; /*para utilizarmosa flexbox*/
+    align-items: center; /*alinha os elemento no centro do eixo horizontal*/
+    justify-content: center;    /*alinha os elemento no centro do eixo vertical*/
 }
 
-.container {
-    width: 80%;
-    height: 80%;
+.container { /*parte do conteúdo*/
+    width: 80%; /*altura do container*/
+    height: 80%; /*largura do container*/
     display: flex;
 }
 
-.form-image {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: #f7e9ba;
-    border-radius: 10px 0px 0px 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.41);
+.form-image { /*altera a div da imagem*/
+    width: 50%; /*tamanho*/
+    display: flex; /*flexbox*/
+    align-items: center; /*alinha os elemento no centro do eixo horizontal*/
+    justify-content: center;  /*alinha os elemento no centro do eixo vertical*/
+    padding: 10px; /*da um espaço do elemento entre o inicio da div*/
+    background-color: #f7e9ba; /*background da imagem*/
+    border-radius: 10px 0px 0px 10px; /*deixa a borda arredondada*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.41); /*adiciona uma sombra ao redor da div*/
 }
 
-.form-image img {
+.form-image img { /*altera apenas a imagem, nesse caso utilizei só para mudar o tamanho*/
     height: 350px;
 }
 
-.form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.form { /*altera toda a div do formulario*/
+    width: 50%; /*tamanho, o quando do container ela ocupara*/
+    display: flex; /*flexbox*/
+    flex-direction:column; /*ajusta a direção dos elementos, sendo ela column(em coluna) ou row (em linha) , ou o reverso de ambos*/
+    align-items: center;  /*alinha os elemento no centro do eixo horizontal*/
+    justify-content: center;  /*alinha os elemento no centro do eixo vertical*/
     background-color: #ffffff;
-    padding: 40px;
+    padding: 40px; 
     border-radius: 0px 10px 10px 0px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.41);
 }
 
-.form-header {
-    margin-bottom: 25px;
+.form-header { /*modifica apenas o cabeçalho do formulario*/
+    margin-bottom: 25px; /*coloca uma margem na div inteira*/
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*coloca um espaçamento igual em ambos os lados do elemento*/
 }
 
-.login-button {
+.login-button { /*altera apenas a div do botão*/
     display: flex;
     align-items: center;
 }
 
-.login-button button {
-    border: none;
-    border-radius: 5px;
+.login-button button { /*altera o botão*/
+    border: none; /*tira qualquer estilo pré definido da borda do botão*/
+    border-radius: 5px; /*deixa a borda arredondada*/
     background-color: #6c63ff;
     padding: 4px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer; /*deixa o cursor como ponteiro*/
 }
 
-.login-button button:hover {
-    background-color: #8983fff1;
+.login-button button:hover { /*hover do botão, "efeito" quando passa o mouse  por cima*/
+    background-color: #8983fff1; /*nesse caso modifiquei apenas o background*/
 }
 
-.login-button button a {
-    text-decoration: none;
-    font-weight: 700;
+.login-button button a { /*modifica o texto do botão*/
+    text-decoration: none; /*tira qualquer decoração pré definida, como o underline ou cor que fica quando colocamos um link em um  texto*/
+    font-weight: 700; /*largura da fonte*/
     color: #ffffff;
 }
 
-.form-header h1::after {
+.form-header h1::after { /*criará espaço entre os elementos filho e o elemento pai. Adicionei uma linha (decoração) em baixo do h1 */
     content: '';
-    display: block;
-    width: 50px;
-    height: 3px;
+    display: block; /*um bloco contém um espaço em branco tanto em cima como embaixo e não permite outros elementos HTML ao lado*/
+    width: 50px; /*largura*/
+    height: 3px; /*altura*/
     background-color: #6c63ff;
-    margin: 0 auto;
+    margin: 0 auto; 
     position: absolute;
     border-radius: 10px;
 }
 
-.input-group {
+.input-group { 
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*permite a quebra de linha*/
     justify-content: space-between;
     padding: 15px;
 }
@@ -114,14 +114,14 @@ body {
 }
 
 .input-box input:focus-visible {
-    outline: 1px solid #6c63ff;
+    outline: 1px solid #6c63ff; /*alterei a borda do input quando clicado*/
 }
 
 .input-box label,
-.gender-title h6 {
-    font-size: 13px;
-    font-weight: 600;
-    color: #000000c0;
+.gender-title h6 { /*alterei o texto da label e do h6 juntos*/
+    font-size: 13px; /*tamanho da fonte*/
+    font-weight: 600; /*largura da fonte*/
+    color: #000000c0; /*cor da fonte*/
 }
 
 .gender-group {
@@ -164,39 +164,39 @@ body {
     color: #ffffff;
 }
 
-@media screen and (max-width: 1330px) {
-    .form-image {
+@media screen and (max-width: 1330px) { /*permite que a renderização do conteúdo se adapte a diferentes condições, como a resolução da tela. Deixando a página responsiva*/
+    .form-image { /*tirei a imagem*/
         display: none;
     }
 
-    .container {
+    .container { /*diminui o container para ocupar agora apenas 50% da página, que antes ocupava 80%*/
         width: 50%;
     }
 
-    .form {
+    .form { /*aumentei o form para ocupar agora 100% do container, que antes ocupava 50%, dividindo espaço com a imagem*/
         width: 100%;
     }
 }
 
-@media screen and (max-width: 1064px) {
-    .container {
+@media screen and (max-width: 1064px) { /*Diminui mais um pouco a tela*/
+    .container { 
         width: 90%;
-        height: auto;
+        height: auto; /*o elemento ajustará automaticamente sua altura para permitir que seu conteúdo seja exibido corretamente*/
     }
 
     .input-group {
-        flex-direction: column;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-        max-height: 150px;
+        flex-direction: column; /*deixei os inputs como coluna*/
+        overflow-y: scroll; /*adicionei um scroll*/
+        flex-wrap: nowrap; /*não permite a quebra dos elementos para a próxima linha*/
+        max-height: 150px; /*altura máxima*/
         padding-right: 80px;
     }
 
-    .gender-input {
+    .gender-input { /*ajustei o input de gênero*/
         margin-top: 20px;
     }
 
-    .gender-group {
+    .gender-group { /*deixei os inputs de gênero também como coluna*/
         flex-direction: column;
     }
 
