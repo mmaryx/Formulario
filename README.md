@@ -1,2 +1,3 @@
-# Este é um formulário de cadastro/login para meus estudos de HTML / CSS
-- Código todo comentado
+# This is a singup and login form for my html/css studies.
+
+- 100% commented code
