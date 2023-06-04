@@ -1,4 +1,4 @@
-# This is a signup and login form for my html/css studies.
+# Esse é um formulário de login e cadastro para os meus estudos de HTML e CSS.
 
-- 100% commented code
+- Código 100% comentado
 - Flex Box
